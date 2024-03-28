@@ -1,0 +1,46 @@
+/* style.css */
+
+#modelContainer {
+    position: relative;
+    width: 100vw; /* 화면 전체 너비로 설정 */
+    height: 100vh; /* 화면 전체 높이로 설정 */
+}
+
+#canvas {
+    width: 100%; /* 부모 요소에 대한 캔버스 크기 설정 */
+    height: 100%; /* 부모 요소에 대한 캔버스 크기 설정 */
+}
+
+#rotateButton {
+    position: absolute;
+	width:180px;
+	height: 45px;
+    bottom: 20px;
+    left: 52.5%;
+    transform: translateX(-50%);
+    z-index: 9999;
+	border: none;
+    background-color: rgba(154, 177, 255, 0.9); /* 배경색을 화이트로 설정 */
+    color: black; /* 글씨 색을 블랙으로 설정 */
+	border-radius:30px;
+	font-size: 13pt;
+	font-weight: bold;
+	transition: 0.4s;
+}
+ button:focus{
+	outline: 0;
+ }
+
+ #rotateButton:hover{
+	background-color: rgba(154, 177, 255, 0.6);
+	cursor: pointer;
+ }
+
+ img {
+	width: 150px;
+	height: auto;
+    position: absolute; /* 로고 이미지를 절대 위치로 배치 */
+    top: 40px; /* 원하는 위치로 조정 */
+    left: 30px; /* 원하는 위치로 조정 */
+    z-index: 999; /* 다른 요소 위에 표시되도록 z-index 설정 */
+}
